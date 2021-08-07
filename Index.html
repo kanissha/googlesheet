@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <?!= include('JavaScript'); ?> 
+    <head>
+        <base target="_top">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <title>XOXO.com </title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  </head>
+  <style>
+      .main
+{
+  border-style: hidden;
+  border-width: medium;
+  padding: 2rem;
+}
+ .sub
+{
+  border-style:hidden;
+    border-color: red;
+  border-width: medium;
+  display: inline-block;
+}
+ .subSub
+{
+  border-style:hidden;
+  border-color: blue;
+  border-width: medium;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.left-content
+{
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+}
+.right-content
+{
+  height: auto;
+  width:32%;
+}
+.left-content
+{
+  display: inline-block;
+  width: 65%;
+  text-align: center;
+}
+.right-content
+{
+  height: auto;
+  width:32%;
+}
+/* ================================ */
+
+
+#logo
+{
+  width:57%;
+  border-radius: 50%;
+}
+.description
+{
+  width: 50%;
+}
+.left-nav
+{
+  position: absolute;
+  left: 1rem;
+  text-align: center;
+  height: 2rem;
+}
+.left-nav,.right-nav,.center-nav
+{
+  position: absolute;
+
+  width: 40%;
+
+  font-size: 1.4rem;
+  bottom: 0;
+}
+.center-nav
+{
+  position: absolute;
+  left: 43%;
+  height: 10rem;
+  width: 12.5%;
+  padding-top: 5px;
+  text-align: center;
+}
+.right-nav
+{
+  position: absolute;
+  right: 2rem;
+  text-align: center;
+  height: 2rem;
+  width:38%
+}
+.header
+{
+
+  position: relative;
+  height: 9rem;
+  padding-bottom: 0;
+  padding-top: 0px;
+}
+
+.navigation
+{
+  position: absolute;
+  bottom: 0;
+}
+.left-navi
+{
+
+  bottom:0;
+}
+.right-navi
+{
+
+  bottom: 0;
+}
+.center-navi
+{
+  bottom: 0;
+  top:0rem;
+  height: 10rem;
+  width: 96%;
+  text-align: center;
+  position: relative;
+}
+h4
+{
+  position: relative;
+  bottom: 0;
+  margin:0;
+}
+.navigation-closing
+{
+  color: #e7e6e1;
+  width: 95%;
+  left: auto;
+  right: auto;
+  box-shadow: 0px 7px 17px grey ;
+  margin:0;
+}
+.brand-name
+{
+  width: 100%;
+  text-align: center;
+  margin:0;
+  bottom: 0;
+  padding-top: 5px;
+  left: 6rem;
+  margin-right: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #84a9ac;
+}
+.nav-bar
+{
+
+  margin-top: 0;
+  height: 9rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  bottom: 0;
+  margin-bottom: 0;
+}
+.content-written
+{
+  width:
+  padding: 2rem;
+
+}
+.content-text
+{
+  padding:0 9rem;
+  text-align: left;
+}
+#logo-body
+{
+  width:100%;
+  border-radius: 50%;
+  bor
+}
+.navList
+{
+  color:#204051;
+}
+.content
+{
+  position: relative;
+  top: 0rem;
+  background-color: #effffb;
+}
+.text
+{
+  position:relative;
+  top:0rem;
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  color: #272727;
+}
+.content-heading
+{
+  font-size: 4rem;
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 100;
+  weight:10;
+  letter-spacing: 0.1rem;
+  color: #50d890;
+}
+.content-heading1
+{
+  width: 65%;
+  text-align: left;
+}
+.left-nav:hover, .right-nav:hover
+{
+  background-color: #63b7af;
+}
+.inquiry
+{
+  position: relative;
+  background-color: #effffb;
+  height: 20rem;
+
+}
+.inquiry-left
+{
+  width: 100%;
+
+  position: absolute;
+  text-align: center;
+  height: 15rem;
+  top: 10rem;
+}
+.label
+{
+      font-family: 'Lora', serif;
+    color: #272727;
+    font-size: 2rem;
+}
+.inquiry-heading
+{
+  text-align: center;
+}
+.btn
+{
+  position: absolute;
+  top: 11.5rem;
+  width: 20%;
+  left: 40%;
+  height: 2rem;
+
+  font-color: #204051;
+
+}
+.submit
+{
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 1px;
+  position: relative;
+  color:#204051;
+  font-size: 1rem;
+  top: -10;
+  margin: 0;
+}
+.btn:hover
+{
+  background-color: #63b7af;
+}
+
+  </style>
+    </head>
+    <body>
+       <!--header-->
+    <div class="header main">
+      <ul style="list-style-type:none; padding:0;" class="nav-bar">
+        <div>
+  
+  
+        <li class=" sub left-nav">
+  
+          <div class="subSub navigation left-navi">
+            <h4 class="navList">HOME</h4>
+          </div>
+  
+        </li>
+        <li class="sub center-nav" style="display:inline-block">
+  
+          <div class="subSub navigation center-navi">
+            <img id="logo" src="logo.jpg" />
+  
+            <div class="brand-name">
+              <h3 style="margin:0;" class="subSub "> Bookworm</h3>
+            </div>
+          </div>
+  
+        </li>
+        <li class="sub right-nav">
+  
+          <div class="subSub navList  navigation right-navi">
+            <h4>INQUIRY</h4>
+          </div>
+  
+        </li>
+        </div>
+      </ul>
+    </div>
+    <hr class="navigation-closing"/>
+    <!--===========================-->
+    <!--main content-->
+    <div class="content main">
+      <div class="sub  left-content content-written ">
+        <div class="subSub content-heading1">
+          <h2 class="content-heading">HOME</h2>
+        </div>
+        <div class="subSub content-text">
+          <p class="text ">
+            Education is an essential tool that imparts knowledge to improve one’s life. The process of Education comprises various steps depending upon the quality of Education. Education is a key process that plays a significant role in molding the ethics and culture of the society.
+  
+          </p>
+        </div>
+      </div>
+      <div class="sub brand-image-outer right-content">
+        <div class="subSub brand-image-inner">
+          <image id="app"src="app.jpg"></image>
+        </div>
+      </div>
+    </div>
+    <hr class="navigation-closing"/>
+    <!--===========================-->
+    <!-- Inquiry-->
+    <div class="inquiry main">
+        <div class="inquiry-heading">
+        <h2 class="content-heading ">Inquiry</h2>
+      </div>
+  
+      <div class="sub left-content inquiry-left" >
+        <div class="subSub">
+          <form>
+          <label class="label" for="name">NAME: </label>
+          <input type="text" name="name" /></br>
+          <label class="label" for="email">EMAIL ID: </label>
+          <input class="label" type="email" name="email" /></br>
+          <label class="label" for="question">QUESTION:</label>
+          <textarea name="question" rows="2" cols="25"></textarea></br>
+          <button class="btn"><h6 class="submit">SUBMIT</h6></button> </br> </br>
+          </form>
+        </div>
+      </div>
+  
+      </div>
+    </div>
+    <!--=============================-->
+    <!--footer-->
+    <div>
+      <!-- footer not yet decided-->
+    </div>
+                      
+    </body>
+</html>
+
